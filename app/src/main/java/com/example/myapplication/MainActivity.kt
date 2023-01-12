@@ -12,8 +12,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         var texto = findViewById<TextView>(R.id.hola)
 
+
         registerForContextMenu(texto)
     }
+    //onclickMenu
 
     override fun onCreateContextMenu(menu: ContextMenu?, v: View?, menuInfo: ContextMenu.ContextMenuInfo?) {
         menuInflater.inflate(R.menu.menu,menu)
